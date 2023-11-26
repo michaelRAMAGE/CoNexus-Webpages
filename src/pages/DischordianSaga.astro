@@ -12,13 +12,13 @@ import Tile from "../components/tile.astro";
     {genres.map((genre) => (
         <div id={genre.title}>
           <h1 class="text-3xl font-bold">{genre.title}</h1>
-          <div class="flex flex-row">
+          <div class="flex flex-row flex-wrap">
             {genre.stories.map((story) => (
               <Tile 
                 primaryImage={story.story_thumbnail_primary}
                 secondaryImage={story.story_thumbnail_secondary}
                 alt={story.story_name}
-                styles='w-48 md:w-64 object-fit'
+                styles='w-64 h-64'
               />
             ))}
           </div>
