@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import { subheadingText, genres } from "../consts/dischordiansaga";
+import Tile from "../components/tile.astro";
+---
+<div class="flex flex-col font-pt-serif-caption space-y-4 m-4 p-2">
+    <div class="flex flex-row items-center space-x-2">
+        <img src="/assets/CoNexusV1/buttons/BackArrow.png" class="h-16" alt="back_button"/>
+        <h1 class="text-6xl font-bold h-16"> The Dischordian Saga </h1>
+    </div>
+    <p class="text-base">{subheadingText}</p>
+    {genres.map((genre) => (
+        <div id={genre.title}>
+          <h1 class="text-3xl font-bold">{genre.title}</h1>
+          <div class="flex flex-row">
+            {genre.stories.map((story) => (
+              <Tile 
+                primaryImage={story.story_thumbnail_primary}
+                secondaryImage={story.story_thumbnail_secondary}
+                alt={story.story_name}
+                styles='w-48 md:w-64 object-fit'
+              />
+            ))}
+          </div>
+        </div>
+      ))}
+</div>
