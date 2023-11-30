@@ -1,23 +1,26 @@
 ---
-import Tile from "./tile.astro"
+import AnimateTile from "./AnimateTile.svelte"
 ---
 <div class="flex flex-row">
-  <Tile 
-    primaryImage="/assets/CoNexusV1/Collabs/Collabs-1.png" 
-    secondaryImage="/assets/CoNexusV1/Collabs/Collabs-2.png" 
-    alt="Collabs" 
-    route="Collabs"
+  <AnimateTile
+      id="Collabs"
+      primaryImage="/assets/CoNexusV1/Collabs/Collabs-1.png" 
+      secondaryImage="/assets/CoNexusV1/Collabs/Collabs-2.png" 
+      alt="Collabs" 
+      isLink={true}
   />
-  <Tile 
+  <AnimateTile 
+    id="CommunityPicks" 
     primaryImage="/assets/CoNexusV1/CommunityPicks/Community-1.png" 
     secondaryImage="/assets/CoNexusV1/CommunityPicks/Community-2.png" 
     alt="CommunityPicks" 
-    route="CommunityPicks"
+    isLink={true}
   />
-  <Tile 
+  <AnimateTile
+    id="DischordianSaga" 
     primaryImage="/assets/CoNexusV1/DischordianSaga/Saga-1.png" 
     secondaryImage="/assets/CoNexusV1/DischordianSaga/Saga-2.png" 
     alt="DischordianSaga" 
-    route="DischordianSaga"
+    isLink={true}
   />
 </div>

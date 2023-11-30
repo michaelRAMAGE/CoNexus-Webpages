@@ -16,3 +16,4 @@ export const sagaText = `The Dischordian Saga led to the creation of CoNexus and
 export const communityText = `Community Picks are stories that aren’t bound to any project or genre but have been demanded, written, or voted in by the Potentials holders.`
 
 export const collabsText = `Collabs are stories that are custom-written to add depth to the partners of DeGenerous DAO.`
+

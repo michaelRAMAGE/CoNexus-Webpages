@@ -10,9 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/svelte": "^4.0.4",
     "@astrojs/tailwind": "^5.0.2",
     "@fontsource/pt-serif-caption": "^5.0.8",
-    "astro": "^3.6.0"
+    "astro": "^3.6.0",
+    "svelte": "^5.0.0-next.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
