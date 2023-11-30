@@ -1,14 +1,27 @@
 ---
-import { subheadingText, genres, stories } from "../consts/dischordiansaga";
+import { heading, subHeadingText, genres } from "../consts/dischordiansaga";
 import { StoryTiles } from '../components/index.js';
+import ConexusSubpage from "../layouts/ConexusSubpage.astro";
+import Styles from "../styles/styles.js";
 ---
-<div class="flex flex-col font-pt-serif-caption space-y-4 m-4 p-2">
-    <div class="flex flex-row items-center space-x-2">
-        <img src="/assets/CoNexusV1/buttons/BackArrow.png" class="h-16" alt="back_button"/>
-        <h1 class="text-6xl font-bold h-16"> The Dischordian Saga </h1>
-    </div>
-    <p class="text-base">{subheadingText}</p>
-    <StoryTiles />
+<div class={`${Styles.conexus_subpage}`}>
+  <ConexusSubpage>
+    <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
+    <p class="text-base" slot="subheading">{subHeadingText}</p>
+  </ConexusSubpage>
+  {
+    genres.map((genre) => (
+      <div id={genre.title}>
+        <h1 class="text-3xl font-bold">{genre.title}</h1>
+        <div class="flex flex-row flex-wrap">
+          <StoryTiles stories={genre.stories} />
+        </div>
+      </div>
+    ))
+  }
 </div>
+
+
+
 
 

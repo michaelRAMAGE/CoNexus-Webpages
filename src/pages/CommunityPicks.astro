@@ -1,0 +1,21 @@
+---
+import { heading, subHeadingText } from "../consts/communitypicks.js";
+import { } from '../components/index.js';
+import ConexusSubpage from "../layouts/ConexusSubpage.astro";
+import Styles from "../styles/styles.js";
+---
+<div class={`${Styles.conexus_subpage}`}>
+    <ConexusSubpage>
+        <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
+        <p class="text-base" slot="subheading">{subHeadingText}</p>
+    </ConexusSubpage>
+    {
+        
+    }
+</div>
+
+
+
+
+
+
