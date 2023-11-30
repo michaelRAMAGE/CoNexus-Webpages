@@ -18,43 +18,43 @@ export const story_names = [
 
 export const stories = {
     "Escape": { 
-        story_thumbnail_primary: small_tiles_path+"Escape1.png",
-        story_thumbnail_secondary: small_tiles_path+"Escape2.png",
+        thumbnail_primary: small_tiles_path+"Escape1.png",
+        thumbnail_secondary: small_tiles_path+"Escape2.png",
         on_click_thumbnail: big_tiles_path+"bEscape.png"
     },
     "Arena": { 
-        story_thumbnail_primary: small_tiles_path+"Arena1.png",
-        story_thumbnail_secondary: small_tiles_path+"Arena2.png",
+        thumbnail_primary: small_tiles_path+"Arena1.png",
+        thumbnail_secondary: small_tiles_path+"Arena2.png",
         on_click_thumbnail: big_tiles_path+"bArena.png"
     },
     "Assassin": { 
-        story_thumbnail_primary: small_tiles_path+"Assassin1.png",
-        story_thumbnail_secondary: small_tiles_path+"Assassin2.png",
+        thumbnail_primary: small_tiles_path+"Assassin1.png",
+        thumbnail_secondary: small_tiles_path+"Assassin2.png",
         on_click_thumbnail: big_tiles_path+"bAssassin.png"
     },
     "Soldier": { 
-        story_thumbnail_primary: small_tiles_path+"Soldier1.png",
-        story_thumbnail_secondary: small_tiles_path+"Soldier2.png",
+        thumbnail_primary: small_tiles_path+"Soldier1.png",
+        thumbnail_secondary: small_tiles_path+"Soldier2.png",
         on_click_thumbnail: big_tiles_path+"bSoldier.png"
     },
     "Spy": { 
-        story_thumbnail_primary: small_tiles_path+"Spy1.png",
-        story_thumbnail_secondary: small_tiles_path+"Spy2.png",
+        thumbnail_primary: small_tiles_path+"Spy1.png",
+        thumbnail_secondary: small_tiles_path+"Spy2.png",
         on_click_thumbnail: big_tiles_path+"bSpy.png"
     },
     "Engineer": {
-        story_thumbnail_primary: small_tiles_path+"Engineer1.png",
-        story_thumbnail_secondary: small_tiles_path+"Engineer2.png",
+        thumbnail_primary: small_tiles_path+"Engineer1.png",
+        thumbnail_secondary: small_tiles_path+"Engineer2.png",
         on_click_thumbnail: big_tiles_path+"bEngineer.png"
     },
     "Oracle": {
-        story_thumbnail_primary: small_tiles_path+"Oracle1.png",
-        story_thumbnail_secondary: small_tiles_path+"Oracle2.png",
+        thumbnail_primary: small_tiles_path+"Oracle1.png",
+        thumbnail_secondary: small_tiles_path+"Oracle2.png",
         on_click_thumbnail: big_tiles_path+"bOracle.png"
     },
     "Inception Ark": {
-        story_thumbnail_primary: small_tiles_path+"Engineer1.png",
-        story_thumbnail_secondary: small_tiles_path+"Engineer2.png",
+        thumbnail_primary: small_tiles_path+"Engineer1.png",
+        thumbnail_secondary: small_tiles_path+"Engineer2.png",
         on_click_thumbnail: big_tiles_path+"bEngineer.png"
     }
 }
@@ -64,15 +64,15 @@ export const genres = [
         title: "General",
         stories: [
         {
-            story_name: "Escape",
-            story_thumbnail_primary: small_tiles_path+"Escape1.png",
-            story_thumbnail_secondary: small_tiles_path+"Escape2.png",
+            name: "Escape",
+            thumbnail_primary: small_tiles_path+"Escape1.png",
+            thumbnail_secondary: small_tiles_path+"Escape2.png",
             on_click_thumbnail: big_tiles_path+"bEscape.png"
         }, 
         {
-            story_name: "Arena",
-            story_thumbnail_primary: small_tiles_path+"Arena1.png",
-            story_thumbnail_secondary: small_tiles_path+"Arena2.png",
+            name: "Arena",
+            thumbnail_primary: small_tiles_path+"Arena1.png",
+            thumbnail_secondary: small_tiles_path+"Arena2.png",
             on_click_thumbnail: big_tiles_path+"bArena.png"
         }] 
     },
@@ -80,33 +80,33 @@ export const genres = [
         title: "Class-gated",
         stories: [
         {
-            story_name: "Assassin",
-            story_thumbnail_primary: small_tiles_path+"Assassin1.png",
-            story_thumbnail_secondary: small_tiles_path+"Assassin2.png",
+            name: "Assassin",
+            thumbnail_primary: small_tiles_path+"Assassin1.png",
+            thumbnail_secondary: small_tiles_path+"Assassin2.png",
             on_click_thumbnail: big_tiles_path+"bAssassin.png"
         }, 
         {
-            story_name: "Soldier",
-            story_thumbnail_primary: small_tiles_path+"Soldier1.png",
-            story_thumbnail_secondary: small_tiles_path+"Soldier2.png",
+            name: "Soldier",
+            thumbnail_primary: small_tiles_path+"Soldier1.png",
+            thumbnail_secondary: small_tiles_path+"Soldier2.png",
             on_click_thumbnail: big_tiles_path+"bSoldier.png"
         },
         {
-            story_name: "Spy",
-            story_thumbnail_primary: small_tiles_path+"Spy1.png",
-            story_thumbnail_secondary: small_tiles_path+"Spy2.png",
+            name: "Spy",
+            thumbnail_primary: small_tiles_path+"Spy1.png",
+            thumbnail_secondary: small_tiles_path+"Spy2.png",
             on_click_thumbnail: big_tiles_path+"bSpy.png"
         }, 
         {
-            story_name: "Engineer",
-            story_thumbnail_primary: small_tiles_path+"Engineer1.png",
-            story_thumbnail_secondary: small_tiles_path+"Engineer2.png",
+            name: "Engineer",
+            thumbnail_primary: small_tiles_path+"Engineer1.png",
+            thumbnail_secondary: small_tiles_path+"Engineer2.png",
             on_click_thumbnail: big_tiles_path+"bEngineer.png"
         },
         {
-            story_name: "Oracle",
-            story_thumbnail_primary: small_tiles_path+"Oracle1.png",
-            story_thumbnail_secondary: small_tiles_path+"Oracle2.png",
+            name: "Oracle",
+            thumbnail_primary: small_tiles_path+"Oracle1.png",
+            thumbnail_secondary: small_tiles_path+"Oracle2.png",
             on_click_thumbnail: big_tiles_path+"bOracle.png"
         }] 
     },
@@ -114,9 +114,9 @@ export const genres = [
         title: "Trait-gated",
         stories: [
         {
-            story_name: "Inception Ark",
-            story_thumbnail_primary: small_tiles_path+"InceptionArk1.png",
-            story_thumbnail_secondary: small_tiles_path+"InceptionArk2.png",
+            name: "Inception Ark",
+            thumbnail_primary: small_tiles_path+"InceptionArk1.png",
+            thumbnail_secondary: small_tiles_path+"InceptionArk2.png",
             on_click_thumbnail: big_tiles_path+"bInceptionArk.png"
         }] 
     } 

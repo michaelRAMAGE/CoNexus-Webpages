@@ -11,12 +11,12 @@
 </script>
 
 <div>
-    {#each stories as story (story.story_name)}
+    {#each stories as story (story.name)}
         <AnimateTile
-            id={story.story_name}
-            primaryImage={story.story_thumbnail_primary}
-            secondaryImage={story.story_thumbnail_secondary}
-            alt={story.story_name}
+            id={story.name}
+            primaryImage={story.thumbnail_primary}
+            secondaryImage={story.thumbnail_secondary}
+            alt={story.name}
             styles='w-64 h-64'
             on:tileClick={handleTileClick}
         />

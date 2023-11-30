@@ -9,9 +9,9 @@ export const story_names = [
 
 export const stories = [
     { 
-        story_name: "GLMA",
-        story_thumbnail_primary: base_path+"GLMA1.png",
-        story_thumbnail_secondary: base_path+"GLMA2.png",
+        name: "GLMA",
+        thumbnail_primary: base_path+"GLMA1.png",
+        thumbnail_secondary: base_path+"GLMA2.png",
         on_click_thumbnail: base_path+"bGLMA.png"
     }
 ]

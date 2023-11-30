@@ -1,0 +1,19 @@
+---
+import { heading, subHeadingText, all_games } from '../consts/sagaverse.js';
+import { TileCollection } from '../components';
+---
+
+<div class="flex flex-col">
+    <h1 class="text-6xl font-bold h-16"> {heading} </h1>
+    <p class="text-base"> {subHeadingText} </p>
+    {
+        all_games.map((game) => (
+          <div id={game.title}>
+            <h1 class="text-3xl font-bold items-center">{game.title}</h1>
+            <div class="flex flex-row flex-wrap">
+              <TileCollection stories={game.content} />
+            </div>
+          </div>
+        ))
+      }
+</div>

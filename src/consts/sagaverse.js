@@ -1,11 +1,12 @@
-export const heading = "SEGAVERSE GAMING";
+export const heading = "SAGAVERSE GAMING";
 
 export const subHeadingText = 
 `Sagaverse Gaming consists of custom games and events that seamlessly integrate with the Dischordian Saga's lore and enhance the NFTs’ narrative.
 
 These experiences, created by ourselves, as well as in collaboration with our Web3 partners, provide extra rewards, encourage community interaction, and expand engagement across diverse games, metaverses, and blockchain platforms.`
 
-const base_path = "/assets/SagaversePage/";
+const base_path = "/assets/SagaversePage/SagaversePage";
+
 
 export const all_games = [
     {

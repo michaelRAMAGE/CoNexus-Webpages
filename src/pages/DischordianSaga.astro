@@ -1,6 +1,6 @@
 ---
 import { heading, subHeadingText, genres } from "../consts/dischordiansaga";
-import { StoryTiles } from '../components/index.js';
+import { TileCollection } from '../components/index.js';
 import ConexusSubpage from "../layouts/ConexusSubpage.astro";
 import Styles from "../styles/styles.js";
 ---
@@ -14,7 +14,7 @@ import Styles from "../styles/styles.js";
       <div id={genre.title}>
         <h1 class="text-3xl font-bold">{genre.title}</h1>
         <div class="flex flex-row flex-wrap">
-          <StoryTiles stories={genre.stories} />
+          <TileCollection stories={genre.stories} />
         </div>
       </div>
     ))
