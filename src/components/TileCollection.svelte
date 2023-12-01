@@ -1,5 +1,5 @@
 <script>
-    import { AnimateTile, ButtonCard } from "../components/index.js";
+    import { AnimateTile, ButtonCard } from "./index.js";
 
     export let stories = [];
 

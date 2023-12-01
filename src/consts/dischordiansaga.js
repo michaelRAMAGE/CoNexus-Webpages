@@ -2,8 +2,9 @@ export const heading = "The Dischordian Saga";
 
 export const subHeadingText = `The Dischordian Saga led to the creation of CoNexus and tells the epic narrative of wars between Artificial Intelligence and Humanity. Its story nodes, voted on by the Potentials NFT holders, evolve the lore and activate a new story within CoNexus each week.`
 
-const small_tiles_path = "/assets/CoNexusV1/DischordianSaga/SmallTiles/"
-const big_tiles_path = "/assets/CoNexusV1/DischordianSaga/BigTiles/"
+const base_path = "/assets/CoNexusV1/DischordianSaga/"
+const small_tiles_path = base_path+"/SmallTiles/"
+const big_tiles_path = base_path+"/BigTiles/"
 
 export const story_names = [
     "Escape",
