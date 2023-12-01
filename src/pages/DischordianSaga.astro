@@ -1,27 +1,36 @@
 ---
-import { heading, subHeadingText, genres } from "../consts/dischordiansaga";
-import { TileCollection } from '../components/index.js';
-import ConexusSubpage from "../layouts/ConexusSubpage.astro";
-import Styles from "../styles/styles.js";
+  import { heading, subHeadingText, genres } from "../consts/dischordiansaga.js";
+  import { TileCollection, PopupTile } from '../components/index.js';
+  import ConexusSubpage from "../layouts/ConexusSubpage.astro.jsx";
+  import Styles from "../styles/styles.js";
+
+  let selectedTile = null;
+
+  function handleTileClick(detail) {
+    console.log("dischordiansaga:", detail);
+    selectedTile = detail;
+  }
+
+  function handleClosePopup() {
+    selectedTile = null;
+  }
 ---
+
 <div class={`${Styles.page}`}>
   <ConexusSubpage>
     <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
-    <p class="text-base" slot="subheading">{subHeadingText}</p>
+    <p class="text-base" slot="subheading"> {subHeadingText} </p>
   </ConexusSubpage>
   {
     genres.map((genre) => (
       <div id={genre.title}>
         <h1 class="text-3xl font-bold">{genre.title}</h1>
         <div class="flex flex-row flex-wrap">
-          <TileCollection stories={genre.stories} />
+          <TileCollection stories={genre.stories} client:load onTileClick={handleTileClick}/>
         </div>
       </div>
     ))
   }
+  { selectedTile &&
+    <PopupTile /> }
 </div>
-
-
-
-
-

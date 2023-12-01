@@ -1,8 +1,6 @@
 ---
-import ConexusTiles from "../components/ConexusTiles.astro"
-import { menuText, subHeading, footerText } from "../consts/conexus"
+import TestComponent from '../components/testcomponent.svelte';
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -10,15 +8,12 @@ import { menuText, subHeading, footerText } from "../consts/conexus"
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption:wght@400;700&display=swap">
 		<meta name="generator" content={Astro.generator} />
-		<title>CoNexus V1</title>
+		<title>New launch pages</title>
 	</head>
 	<body>
-		<div class="flex flex-col space-y-4 px-10 font-pt-serif-caption">
-			<h1 class="text-6xl text-center"> CoNexus </h1>
-			<p class="text-3xl"> {subHeading} </p>
-			<p class="text-base"> {menuText} </p>
-			<ConexusTiles /> 
-			<p class="text-base"> {footerText} </p>
+		<div class="flex flex-col m-2 p-2">
+			<a href="/CoNexus" class="text-2xl">CoNexus pages</a>
+			<a href="/Sagaverse" class="text-2xl">Sagaverse pages</a>
 		</div>
 	</body>
 </html>

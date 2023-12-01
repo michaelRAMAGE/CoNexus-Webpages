@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "conexus_webpages",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -14,7 +14,7 @@
     "@astrojs/tailwind": "^5.0.2",
     "@fontsource/pt-serif-caption": "^5.0.8",
     "astro": "^3.6.0",
-    "svelte": "^5.0.0-next.1"
+    "svelte": "^3.42.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

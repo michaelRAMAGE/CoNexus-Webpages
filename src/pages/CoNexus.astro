@@ -1,0 +1,12 @@
+---
+import ConexusTiles from "../components/ConexusTiles.astro"
+import { menuText, subHeading, footerText } from "../consts/conexus"
+---
+<div class="flex flex-col space-y-4 px-10 font-pt-serif-caption">
+    <h1 class="text-6xl text-center"> CoNexus </h1>
+    <p class="text-3xl"> {subHeading} </p>
+    <p class="text-base"> {menuText} </p>
+    <ConexusTiles /> 
+    <p class="text-base"> {footerText} </p>
+</div>
+
