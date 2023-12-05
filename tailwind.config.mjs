@@ -12,6 +12,9 @@ export default {
 			'70': '70px',
 		  },
 		},
+		backgroundColor: {
+			'blue': '#2441bd'
+		}
 	},
 	plugins: [],
 }

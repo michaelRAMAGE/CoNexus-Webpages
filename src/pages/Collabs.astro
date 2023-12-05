@@ -1,15 +1,15 @@
 ---
-import { heading, subHeadingText, stories, story_names } from "../consts/collabs.js";
+import { heading, subHeadingText, stories  } from "../consts/collabs.js";
 import { TileCollection } from '../components/index.js';
 import ConexusSubpage from "../layouts/ConexusSubpage.astro";
-import Styles from "../styles/styles.js";
+import styles from "../styles/styles.js";
 ---
-<div class={`${Styles.page}`}>
+<div class={`${styles.page}`}>
     <ConexusSubpage>
         <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
         <p class="text-base" slot="subheading">{subHeadingText}</p>
     </ConexusSubpage>
-    <TileCollection stories={stories} />
+    <TileCollection tileData={stories} collectionStyles='space-x-2' tileStyles="w-64 h-64" client:load  />
 <div/>
 
 

@@ -1,19 +1,17 @@
 ---
 import { heading, subHeadingText, all_games } from '../consts/sagaverse.js';
 import { TileCollection } from '../components';
-import Styles from "../styles/styles.js";
+import styles from "../styles/styles.js";
 ---
 
-<div class={`${Styles.page}`}>
+<div class={`${styles.page}`}>
     <h1 class="text-6xl font-bold h-16 text-center"> {heading} </h1>
     <p class="text-base"> {subHeadingText} </p>
     {
         all_games.map((game) => (
           <div id={game.title}>
             <h1 class="text-3xl font-bold">{game.title}</h1>
-            <div class="flex flex-row flex-wrap">
-              <TileCollection stories={game.content} />
-            </div>
+            <TileCollection tileData={game.content} collectionStyles='space-x-2' tileStyles="w-64 h-64" client:load />
           </div>
         ))
       }

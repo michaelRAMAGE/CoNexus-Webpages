@@ -6,8 +6,8 @@ const base_path = "/assets/CoNexusV1/CommunityPicks/"
 export const tiles = [
     { 
         name: "Upcoming",
-        thumbnail_primary: base_path+"Upcoming-1.png",
-        thumbnail_secondary: base_path+"Upcoming-2.png",
+        thumbnail_primary: base_path+"Upcoming.png",
+        thumbnail_secondary: base_path+"Upcoming.png",
         on_click_thumbnail: base_path+""
     }
 ]

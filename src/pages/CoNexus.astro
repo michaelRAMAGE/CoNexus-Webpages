@@ -1,12 +1,13 @@
 ---
-import ConexusTiles from "../components/ConexusTiles.astro"
-import { menuText, subHeading, footerText } from "../consts/conexus"
+import TileCollection from '../components/TileCollection.svelte';
+import styles from "../styles/styles";
+import { menuText, subHeading, footerText, conexusTiles } from "../consts/conexus";
 ---
-<div class="flex flex-col space-y-4 px-10 font-pt-serif-caption">
+<div class={`${styles.page} h-screen`}>
     <h1 class="text-6xl text-center"> CoNexus </h1>
     <p class="text-3xl"> {subHeading} </p>
     <p class="text-base"> {menuText} </p>
-    <ConexusTiles /> 
+    <TileCollection tileData={conexusTiles} collectionStyles='flex flex-row' tileStyles="" areLinks={true} client:load />
     <p class="text-base"> {footerText} </p>
 </div>
 

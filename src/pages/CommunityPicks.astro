@@ -9,7 +9,7 @@ import Styles from "../styles/styles.js";
         <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
         <p class="text-base" slot="subheading">{subHeadingText}</p>
     </ConexusSubpage>
-    <TileCollection stories={tiles} />
+    <TileCollection tileData={tiles} collectionStyles='space-x-2' tileStyles="w-64 h-64" client:load  />
 </div>
 
 

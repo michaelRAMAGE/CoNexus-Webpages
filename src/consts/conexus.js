@@ -17,3 +17,20 @@ export const communityText = `Community Picks are stories that aren’t bound to
 
 export const collabsText = `Collabs are stories that are custom-written to add depth to the partners of DeGenerous DAO.`
 
+export const conexusTiles = 
+
+[   { name: "Collabs",
+        thumbnail_primary:"/assets/CoNexusV1/Collabs/Collabs-1.png",
+        thumbnail_secondary:"/assets/CoNexusV1/Collabs/Collabs-2.png" 
+    },
+    { name: "CommunityPicks",
+        thumbnail_primary:"/assets/CoNexusV1/CommunityPicks/Community-1.png",
+        thumbnail_secondary:"/assets/CoNexusV1/CommunityPicks/Community-2.png" 
+    },
+    { name: "DischordianSaga",
+        thumbnail_primary:"/assets/CoNexusV1/DischordianSaga/Saga-1.png",
+        thumbnail_secondary:"/assets/CoNexusV1/DischordianSaga/Saga-2.png" 
+    }
+]
+
+

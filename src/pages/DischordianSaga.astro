@@ -1,8 +1,8 @@
 ---
   import { heading, subHeadingText, genres } from "../consts/dischordiansaga.js";
   import { TileCollection, PopupTile } from '../components/index.js';
-  import ConexusSubpage from "../layouts/ConexusSubpage.astro.jsx";
-  import Styles from "../styles/styles.js";
+  import ConexusSubpage from "../layouts/ConexusSubpage.astro";
+  import styles from "../styles/styles.js";
 
   let selectedTile = null;
 
@@ -16,7 +16,7 @@
   }
 ---
 
-<div class={`${Styles.page}`}>
+<div class={`${styles.page}`}>
   <ConexusSubpage>
     <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
     <p class="text-base" slot="subheading"> {subHeadingText} </p>
@@ -25,12 +25,8 @@
     genres.map((genre) => (
       <div id={genre.title}>
         <h1 class="text-3xl font-bold">{genre.title}</h1>
-        <div class="flex flex-row flex-wrap">
-          <TileCollection stories={genre.stories} client:load onTileClick={handleTileClick}/>
-        </div>
+        <TileCollection tileData={genre.stories} collectionStyles='space-x-2' tileStyles="w-64 h-64" client:load onTileClick={handleTileClick}/>
       </div>
     ))
   }
-  { selectedTile &&
-    <PopupTile /> }
 </div>

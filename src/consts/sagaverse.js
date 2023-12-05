@@ -6,8 +6,8 @@ export const subHeadingText =
 These experiences, created by ourselves, as well as in collaboration with our Web3 partners, provide extra rewards, encourage community interaction, and expand engagement across diverse games, metaverses, and blockchain platforms.`
 
 const base_path = "/assets/SagaversePage/";
-const small_tiles_path = base_path+"/smallTiles/";
-const big_tiles_path = base_path+"/bigTiles/";
+const small_tiles_path = base_path+"/SmallTiles/";
+const big_tiles_path = base_path+"/BigTiles/";
 
 export const all_games = [
     {
@@ -55,9 +55,9 @@ export const all_games = [
             }, 
             {
                 name: "Upcoming",
-                thumbnail_primary: small_tiles_path+"Upcoming-1.png",
-                thumbnail_secondary: small_tiles_path+"Upcoming-2.png",
-                on_click_thumbnail: big_tiles_path+"bB4N.png",
+                thumbnail_primary: small_tiles_path+"Upcoming.png",
+                thumbnail_secondary: small_tiles_path+"Upcoming.png",
+                on_click_thumbnail: "",
                 on_click_text: `More information to be released!`
             }, 
         ]

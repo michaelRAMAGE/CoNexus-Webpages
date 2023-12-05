@@ -1,5 +1,6 @@
 ---
-import TestComponent from '../components/testcomponent.svelte';
+import { PopupTile } from "../components";
+import { stories } from '../consts/dischordiansaga'
 ---
 <html lang="en">
 	<head>
@@ -15,5 +16,6 @@ import TestComponent from '../components/testcomponent.svelte';
 			<a href="/CoNexus" class="text-2xl">CoNexus pages</a>
 			<a href="/Sagaverse" class="text-2xl">Sagaverse pages</a>
 		</div>
+		<!-- <PopupTile client:load text={`${stories["Arena"].on_click_text}`} img_path="/assets/CoNexusV1/DischordianSaga/BigTiles/bArena.png" img_alt="Dummy" button_path="/assets/CoNexusV1/buttons/PlayButton.png" button_hover_path="/assets/CoNexusV1/buttons/PlayButton-Hover.png"/> -->
 	</body>
 </html>
