@@ -3,11 +3,12 @@ import TileCollection from '../components/TileCollection.svelte';
 import styles from "../styles/styles";
 import { menuText, subHeading, footerText, conexusTiles } from "../consts/conexus";
 ---
-<div class={`${styles.page} h-screen`}>
-    <h1 class="text-6xl text-center"> CoNexus </h1>
-    <p class="text-3xl"> {subHeading} </p>
-    <p class="text-base"> {menuText} </p>
-    <TileCollection tileData={conexusTiles} collectionStyles='flex flex-row' tileStyles="" areLinks={true} client:load />
-    <p class="text-base"> {footerText} </p>
+
+<div class={`${styles.page}`}>
+    <h1 class={`${styles.headerText} text-center`}> CoNexus </h1>
+    <p class={`${styles.subHeadingText}`}> {subHeading} </p>
+    <p class={`${styles.regularText}`}> {menuText} </p>
+    <TileCollection tileData={conexusTiles} collectionStyles='flex flex-row space-x-2' tileStyles={`${styles.normalTile}`} areLinks={true} client:load />
+    <p class={`${styles.regularText}`}> {footerText} </p>
 </div>
 

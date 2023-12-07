@@ -4,12 +4,13 @@ import { TileCollection } from '../components/index.js';
 import ConexusSubpage from "../layouts/ConexusSubpage.astro";
 import styles from "../styles/styles.js";
 ---
+
 <div class={`${styles.page}`}>
     <ConexusSubpage>
-        <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
-        <p class="text-base" slot="subheading">{subHeadingText}</p>
+        <h1 class=`${styles.headerText}` slot="header"> {heading} </h1>
+        <p class=`${styles.regularText}` slot="subheading"> {subHeadingText} </p>
     </ConexusSubpage>
-    <TileCollection tileData={stories} collectionStyles='space-x-2' tileStyles="w-64 h-64" client:load  />
+    <TileCollection tileData={stories} collectionStyles={`${styles.normalTileCollection}`} tileStyles={`${styles.normalTile}`} client:load  />
 <div/>
 
 

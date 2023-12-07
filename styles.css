@@ -564,3 +564,7 @@ video {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
+
+.main-bg {
+  background: linear-gradient(to right, #010113, #1e0a71, #241451);
+}

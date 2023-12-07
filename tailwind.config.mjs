@@ -11,6 +11,14 @@ export default {
 			'120': '120px',
 			'70': '70px',
 		  },
+		  colors: {
+			'daogrey': '#dedede',
+			'daoblue1': '#4e8bff',
+			'daoblue2': '#3d6ed1',
+			'010113': '#010113',
+			'1e0a71': '#1e0a71',
+			'241451': '#241451',
+		  }
 		},
 		backgroundColor: {
 			'blue': '#2441bd'

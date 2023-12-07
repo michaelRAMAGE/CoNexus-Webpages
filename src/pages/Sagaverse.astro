@@ -4,15 +4,15 @@ import { TileCollection } from '../components';
 import styles from "../styles/styles.js";
 ---
 
-<div class={`${styles.page}`}>
-    <h1 class="text-6xl font-bold h-16 text-center"> {heading} </h1>
-    <p class="text-base"> {subHeadingText} </p>
+<div class={`${styles.page} `}>
+    <h1 class={`text-6xl font-bold text-center text-daoblue1`}> {heading} </h1>
+    <p class={`${styles.regularText}`}> {subHeadingText} </p>
     {
         all_games.map((game) => (
           <div id={game.title}>
-            <h1 class="text-3xl font-bold">{game.title}</h1>
-            <TileCollection tileData={game.content} collectionStyles='space-x-2' tileStyles="w-64 h-64" client:load />
+            <h1 class={`text-daoblue2 text-3xl font-bold`}>{game.title}</h1>
+            <TileCollection tileData={game.content} collectionStyles={`${styles.normalTileCollection}`} tileStyles={`${styles.normalTile}`} client:load />
           </div>
         ))
-      }
+    }
 </div>

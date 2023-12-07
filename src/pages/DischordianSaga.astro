@@ -18,14 +18,14 @@
 
 <div class={`${styles.page}`}>
   <ConexusSubpage>
-    <h1 class="text-6xl font-bold h-16" slot="header"> {heading} </h1>
-    <p class="text-base" slot="subheading"> {subHeadingText} </p>
+    <h1 class=`${styles.headerText}` slot="header"> {heading} </h1>
+    <p class=`${styles.regularText}` slot="subheading"> {subHeadingText} </p>
   </ConexusSubpage>
   {
     genres.map((genre) => (
       <div id={genre.title}>
-        <h1 class="text-3xl font-bold">{genre.title}</h1>
-        <TileCollection tileData={genre.stories} collectionStyles='space-x-2' tileStyles="w-64 h-64" client:load onTileClick={handleTileClick}/>
+        <h1 class={`${styles.subHeadingText}`}>{genre.title}</h1>
+        <TileCollection tileData={genre.stories} collectionStyles={`${styles.normalTileCollection}`} tileStyles={`${styles.normalTile}`} client:load onTileClick={handleTileClick}/>
       </div>
     ))
   }

@@ -18,13 +18,13 @@
 </script>
 
 {#if isLink}
-  <a href={id} class={`${styles} block`} id={id} >
-    <img src={isHovered ? secondaryImage : primaryImage} alt={alt} on:mouseover={() => isHovered = true} on:mouseout={() => isHovered = false}/>
+  <a href={id} id={id} class='block' >
+    <img src={isHovered ? secondaryImage : primaryImage} alt={alt} class={`${styles}`} on:mouseover={() => isHovered = true} on:mouseout={() => isHovered = false}/>
   </a>
 {:else}
-  <button id={id} class={`${styles}`} on:click={handleClick} on:mouseover={() => isHovered = true} on:mouseout={() => isHovered = false}>
-    <img src={isHovered ? secondaryImage : primaryImage} alt={alt} class="" />
-  </button>
+  <div id={id} on:click={handleClick} class='cursor-pointer' on:mouseover={() => isHovered = true} on:mouseout={() => isHovered = false}>
+    <img src={isHovered ? secondaryImage : primaryImage} alt={alt} class={`${styles}`} />
+  </div>
 {/if}
 
 
