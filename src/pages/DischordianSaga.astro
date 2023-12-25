@@ -3,19 +3,7 @@
   import { TileCollection, PopupTile } from '../components/index.js';
   import ConexusSubpage from "../layouts/ConexusSubpage.astro";
   import styles from "../styles/styles.js";
-
-  let selectedTile = null;
-
-  function handleTileClick(detail) {
-    console.log("dischordiansaga:", detail);
-    selectedTile = detail;
-  }
-
-  function handleClosePopup() {
-    selectedTile = null;
-  }
 ---
-
 <div class={`${styles.page}`}>
   <ConexusSubpage>
     <h1 class=`${styles.headerText}` slot="header"> {heading} </h1>
@@ -25,7 +13,7 @@
     genres.map((genre) => (
       <div id={genre.title}>
         <h1 class={`${styles.subHeadingText}`}>{genre.title}</h1>
-        <TileCollection tileData={genre.stories} collectionStyles={`${styles.normalTileCollection}`} tileStyles={`${styles.normalTile}`} client:load onTileClick={handleTileClick}/>
+        <TileCollection tileData={genre.stories} collectionStyles={`${styles.normalTileCollection}`} tileStyles={`${styles.normalTile}`} client:load />
       </div>
     ))
   }

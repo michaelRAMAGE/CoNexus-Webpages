@@ -10,14 +10,6 @@
   export let text = "";
   
   let buttonIsHovered = false;
-  const dispatch = createEventDispatcher();
-
-  function pressPlay() {
-    dispatch('play', {
-      text: 'play'
-    });
-  }
-
 </script>
 
 <div style='' class={`flex flex-row w-[800px] h-[376px] p-[4.3px] m-2 rounded-2xl bg-blue ${tile_styles}`}> 

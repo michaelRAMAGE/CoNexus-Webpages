@@ -9,12 +9,6 @@
   export let styles = ""; 
 
   let isHovered = false; 
-
-  const dispatch = createEventDispatcher();
-  function handleClick() {
-    console.log(id + "in animate tile")
-    dispatch('tileClick', { id });
-  }
 </script>
 
 {#if isLink}

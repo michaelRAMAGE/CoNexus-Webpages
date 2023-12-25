@@ -32,12 +32,21 @@ export const all_games = [
                 Can you navigate the temple and destroy the AI Security forces to reach the inner chambers and eliminate your target?`
             }, 
             {
-                name: "Project Warhawk",
-                thumbnail_primary: small_tiles_path+"PW-1.png",
-                thumbnail_secondary: small_tiles_path+"PW-2.png",
-                on_click_thumbnail: big_tiles_path+"bPW.png",
-                on_click_text: `Project Warhawk is the code name for our upcoming multiplayer top-down shooter game based on the clans formed by Potentials classes.`
+                name: "Last Stand",
+                thumbnail_primary: small_tiles_path+"LS-1.png",
+                thumbnail_secondary: small_tiles_path+"LS-2.png",
+                on_click_thumbnail: big_tiles_path+"bLS.png",
+                on_click_text: `Last Stand is a top-down shooter game based on the lore of Iron Lion, when the greatest soldier of the human Insurgency was left alone in an impossible situation to battle waves of AI robots and save time for Agent Zero, to give humanity a chance for the future. 
+
+                Can you defeat enough robotic assassins to save the Veridian Prime planet?`
             }, 
+            // {
+            //     name: "Project Warhawk",
+            //     thumbnail_primary: small_tiles_path+"PW-1.png",
+            //     thumbnail_secondary: small_tiles_path+"PW-2.png",
+            //     on_click_thumbnail: big_tiles_path+"bPW.png",
+            //     on_click_text: `Project Warhawk is the code name for our upcoming multiplayer top-down shooter game based on the clans formed by Potentials classes.`
+            // },
             
         ]
     },

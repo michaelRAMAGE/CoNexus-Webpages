@@ -6,15 +6,6 @@
   export let collectionStyles = "";
   export let tileStyles = "";
   export let areLinks = false; 
-
-  export let onTileClick = (detail) => {};
-
-  // const dispatch = createEventDispatcher();
-  function handleTileClick(detail) {
-      console.log(detail + "in tile collection")
-      onTileClick(detail)
-      // dispatch('tileClick', detail);
-  }
 </script>
 
 <div class={`${collectionStyles}`}>
@@ -26,7 +17,6 @@
       alt={story.name}
       styles={tileStyles}
       isLink={areLinks ? true : false}
-      on:tileClick={(event) => handleTileClick(event.detail)}
     />
   {/each}
 </div>
